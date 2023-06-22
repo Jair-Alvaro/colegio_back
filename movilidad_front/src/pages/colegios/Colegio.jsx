@@ -1,34 +1,28 @@
 import AdminLayout from '../../components/plantillas/AdminLayout'
+import ListaColegios from "../../components/ListaColegios";
+import ColegioButton from "../../components/ColegioForm";
+
 
 function Colegio() {
     return (
         <AdminLayout>
             <>
                 <h1>Colegios</h1>
-                <div className="mb-3">
-                    <label className="form-label">Nuevo Colegio</label>
-                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
-                    <br />
-                    <button type="button" className="btn btn-success">Guardar</button>
+                <div className='container mt-5'>
+                    <div className="row">
+                        <div className="col">
+                            <ColegioButton />
+                        </div>
+
+                    </div>
+                    <div className="row">
+                        <div className="col">
+                            <ListaColegios />
+                        </div>
+                        <div className="col">
+                        </div>
+                    </div>
                 </div>
-                <table className="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Id</th>
-                            <th scope="col">Descripción</th>
-                            <th scope="col"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                    </tbody>
-                </table>
 
             </>
         </AdminLayout>

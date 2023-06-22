@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { postColegio } from '../../apiReact/api';
 import { getColegios, getZonas } from '../../apiReact/api';
 
+
 function ColegioForm() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
